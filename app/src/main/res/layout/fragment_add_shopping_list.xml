@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="example.haim.shoppingappfirebase.fragments.AddShoppingListDialog">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:srcCompat="@drawable/ic_add_shopping_cart"
+        />
+
+    <EditText
+        android:layout_marginTop="8dp"
+        android:id="@+id/etListTitle"
+        android:layout_below="@id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/listName"
+        android:padding="16dp"
+        android:gravity="center"
+        />
+
+    <Button
+        android:id="@+id/btnDone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/doneButton"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/etListTitle"
+        android:background="#f4f4f4"
+        android:textColor="#383636"
+        />
+
+
+
+</RelativeLayout>
